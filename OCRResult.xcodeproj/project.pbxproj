@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A03DB17F1F0B5ADD004A6577 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A03DB17E1F0B5ADD004A6577 /* main.m */; };
+		A03DB1821F0B5ADD004A6577 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A03DB1811F0B5ADD004A6577 /* AppDelegate.m */; };
+		A03DB1851F0B5ADD004A6577 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03DB1841F0B5ADD004A6577 /* ViewController.m */; };
+		A03DB1881F0B5ADD004A6577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03DB1861F0B5ADD004A6577 /* Main.storyboard */; };
+		A03DB18A1F0B5ADD004A6577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03DB1891F0B5ADD004A6577 /* Assets.xcassets */; };
+		A03DB18D1F0B5ADD004A6577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03DB18B1F0B5ADD004A6577 /* LaunchScreen.storyboard */; };
+		A03DB1981F0B5ADD004A6577 /* OCRResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A03DB1971F0B5ADD004A6577 /* OCRResultTests.m */; };
+		A03DB1A31F0B5ADD004A6577 /* OCRResultUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A03DB1A21F0B5ADD004A6577 /* OCRResultUITests.m */; };
+		A03DB1D41F0B5E9D004A6577 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03DB1D31F0B5E9D004A6577 /* ImageIO.framework */; };
+		A03DB1DC1F0B5ECD004A6577 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03DB1DB1F0B5ECD004A6577 /* MediaPlayer.framework */; };
+		A03DB1E01F0B5F6B004A6577 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A03DB1DF1F0B5F6B004A6577 /* libstdc++.tbd */; };
+		A07008801F0B787F00EC2FE3 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = A070087F1F0B787F00EC2FE3 /* tessdata */; };
+		A0EC6E711F0B839C00A4067B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EC6E701F0B839C00A4067B /* CoreImage.framework */; };
+		A0EC6E731F0B83A500A4067B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EC6E721F0B83A500A4067B /* QuartzCore.framework */; };
+		A0EC6E751F0B83B200A4067B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EC6E741F0B83B200A4067B /* CoreMedia.framework */; };
+		A0EC6E771F0B83B900A4067B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EC6E761F0B83B900A4067B /* AVFoundation.framework */; };
+		A0EC6E7B1F0B92C200A4067B /* UIBarButtonItem+OCRAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EC6E7A1F0B92C200A4067B /* UIBarButtonItem+OCRAdd.m */; };
+		A0EC6E911F0B98AD00A4067B /* MACaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EC6E801F0B98AD00A4067B /* MACaptureSession.m */; };
+		A0EC6E921F0B98AD00A4067B /* MAConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EC6E821F0B98AD00A4067B /* MAConstants.m */; };
+		A0EC6E931F0B98AD00A4067B /* MADrawRect.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EC6E841F0B98AD00A4067B /* MADrawRect.m */; };
+		A0EC6E941F0B98AD00A4067B /* MAImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EC6E861F0B98AD00A4067B /* MAImagePickerController.m */; };
+		A0EC6E951F0B98AD00A4067B /* MAImagePickerControllerAdjustViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0EC6E881F0B98AD00A4067B /* MAImagePickerControllerAdjustViewController.mm */; };
+		A0EC6E961F0B98AD00A4067B /* MAImagePickerFinalViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0EC6E8A1F0B98AD00A4067B /* MAImagePickerFinalViewController.mm */; };
+		A0EC6E971F0B98AD00A4067B /* MAOpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0EC6E8C1F0B98AD00A4067B /* MAOpenCV.mm */; };
+		A0EC6E981F0B98AD00A4067B /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EC6E8E1F0B98AD00A4067B /* UIImage+fixOrientation.m */; };
+		A0EC6E991F0B98AD00A4067B /* UIImageView+ContentFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EC6E901F0B98AD00A4067B /* UIImageView+ContentFrame.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A03DB1941F0B5ADD004A6577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A03DB1721F0B5ADD004A6577 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A03DB1791F0B5ADD004A6577;
+			remoteInfo = OCRResult;
+		};
+		A03DB19F1F0B5ADD004A6577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A03DB1721F0B5ADD004A6577 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A03DB1791F0B5ADD004A6577;
+			remoteInfo = OCRResult;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A03DB17A1F0B5ADD004A6577 /* OCRResult.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCRResult.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03DB17E1F0B5ADD004A6577 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A03DB1801F0B5ADD004A6577 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A03DB1811F0B5ADD004A6577 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A03DB1831F0B5ADD004A6577 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A03DB1841F0B5ADD004A6577 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A03DB1871F0B5ADD004A6577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A03DB1891F0B5ADD004A6577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A03DB18C1F0B5ADD004A6577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A03DB18E1F0B5ADD004A6577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A03DB1931F0B5ADD004A6577 /* OCRResultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCRResultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03DB1971F0B5ADD004A6577 /* OCRResultTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRResultTests.m; sourceTree = "<group>"; };
+		A03DB1991F0B5ADD004A6577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A03DB19E1F0B5ADD004A6577 /* OCRResultUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCRResultUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03DB1A21F0B5ADD004A6577 /* OCRResultUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRResultUITests.m; sourceTree = "<group>"; };
+		A03DB1A41F0B5ADD004A6577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A03DB1D31F0B5E9D004A6577 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A03DB1DB1F0B5ECD004A6577 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A03DB1DF1F0B5F6B004A6577 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		A070087F1F0B787F00EC2FE3 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		A0EC6E701F0B839C00A4067B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		A0EC6E721F0B83A500A4067B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A0EC6E741F0B83B200A4067B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A0EC6E761F0B83B900A4067B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A0EC6E781F0B86D300A4067B /* OCRResult-pch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCRResult-pch.pch"; sourceTree = "<group>"; };
+		A0EC6E791F0B92C200A4067B /* UIBarButtonItem+OCRAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+OCRAdd.h"; sourceTree = "<group>"; };
+		A0EC6E7A1F0B92C200A4067B /* UIBarButtonItem+OCRAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+OCRAdd.m"; sourceTree = "<group>"; };
+		A0EC6E7F1F0B98AD00A4067B /* MACaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACaptureSession.h; sourceTree = "<group>"; };
+		A0EC6E801F0B98AD00A4067B /* MACaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACaptureSession.m; sourceTree = "<group>"; };
+		A0EC6E811F0B98AD00A4067B /* MAConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAConstants.h; sourceTree = "<group>"; };
+		A0EC6E821F0B98AD00A4067B /* MAConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAConstants.m; sourceTree = "<group>"; };
+		A0EC6E831F0B98AD00A4067B /* MADrawRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADrawRect.h; sourceTree = "<group>"; };
+		A0EC6E841F0B98AD00A4067B /* MADrawRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADrawRect.m; sourceTree = "<group>"; };
+		A0EC6E851F0B98AD00A4067B /* MAImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAImagePickerController.h; sourceTree = "<group>"; };
+		A0EC6E861F0B98AD00A4067B /* MAImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAImagePickerController.m; sourceTree = "<group>"; };
+		A0EC6E871F0B98AD00A4067B /* MAImagePickerControllerAdjustViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAImagePickerControllerAdjustViewController.h; sourceTree = "<group>"; };
+		A0EC6E881F0B98AD00A4067B /* MAImagePickerControllerAdjustViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MAImagePickerControllerAdjustViewController.mm; sourceTree = "<group>"; };
+		A0EC6E891F0B98AD00A4067B /* MAImagePickerFinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAImagePickerFinalViewController.h; sourceTree = "<group>"; };
+		A0EC6E8A1F0B98AD00A4067B /* MAImagePickerFinalViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MAImagePickerFinalViewController.mm; sourceTree = "<group>"; };
+		A0EC6E8B1F0B98AD00A4067B /* MAOpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAOpenCV.h; sourceTree = "<group>"; };
+		A0EC6E8C1F0B98AD00A4067B /* MAOpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MAOpenCV.mm; sourceTree = "<group>"; };
+		A0EC6E8D1F0B98AD00A4067B /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		A0EC6E8E1F0B98AD00A4067B /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		A0EC6E8F1F0B98AD00A4067B /* UIImageView+ContentFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ContentFrame.h"; sourceTree = "<group>"; };
+		A0EC6E901F0B98AD00A4067B /* UIImageView+ContentFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ContentFrame.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A03DB1771F0B5ADD004A6577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03DB1DC1F0B5ECD004A6577 /* MediaPlayer.framework in Frameworks */,
+				A0EC6E771F0B83B900A4067B /* AVFoundation.framework in Frameworks */,
+				A0EC6E751F0B83B200A4067B /* CoreMedia.framework in Frameworks */,
+				A0EC6E731F0B83A500A4067B /* QuartzCore.framework in Frameworks */,
+				A0EC6E711F0B839C00A4067B /* CoreImage.framework in Frameworks */,
+				A03DB1E01F0B5F6B004A6577 /* libstdc++.tbd in Frameworks */,
+				A03DB1D41F0B5E9D004A6577 /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03DB1901F0B5ADD004A6577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03DB19B1F0B5ADD004A6577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A03DB1711F0B5ADD004A6577 = {
+			isa = PBXGroup;
+			children = (
+				A03DB17C1F0B5ADD004A6577 /* OCRResult */,
+				A03DB1961F0B5ADD004A6577 /* OCRResultTests */,
+				A03DB1A11F0B5ADD004A6577 /* OCRResultUITests */,
+				A03DB17B1F0B5ADD004A6577 /* Products */,
+				A03DB1D01F0B5E7C004A6577 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A03DB17B1F0B5ADD004A6577 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A03DB17A1F0B5ADD004A6577 /* OCRResult.app */,
+				A03DB1931F0B5ADD004A6577 /* OCRResultTests.xctest */,
+				A03DB19E1F0B5ADD004A6577 /* OCRResultUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A03DB17C1F0B5ADD004A6577 /* OCRResult */ = {
+			isa = PBXGroup;
+			children = (
+				A070087F1F0B787F00EC2FE3 /* tessdata */,
+				A0EC6E7E1F0B98AD00A4067B /* MAImagePickerController */,
+				A03DB1801F0B5ADD004A6577 /* AppDelegate.h */,
+				A03DB1811F0B5ADD004A6577 /* AppDelegate.m */,
+				A03DB1831F0B5ADD004A6577 /* ViewController.h */,
+				A03DB1841F0B5ADD004A6577 /* ViewController.m */,
+				A0EC6E791F0B92C200A4067B /* UIBarButtonItem+OCRAdd.h */,
+				A0EC6E7A1F0B92C200A4067B /* UIBarButtonItem+OCRAdd.m */,
+				A03DB1861F0B5ADD004A6577 /* Main.storyboard */,
+				A03DB1891F0B5ADD004A6577 /* Assets.xcassets */,
+				A03DB18B1F0B5ADD004A6577 /* LaunchScreen.storyboard */,
+				A03DB18E1F0B5ADD004A6577 /* Info.plist */,
+				A03DB17D1F0B5ADD004A6577 /* Supporting Files */,
+			);
+			path = OCRResult;
+			sourceTree = "<group>";
+		};
+		A03DB17D1F0B5ADD004A6577 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A03DB17E1F0B5ADD004A6577 /* main.m */,
+				A0EC6E781F0B86D300A4067B /* OCRResult-pch.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A03DB1961F0B5ADD004A6577 /* OCRResultTests */ = {
+			isa = PBXGroup;
+			children = (
+				A03DB1971F0B5ADD004A6577 /* OCRResultTests.m */,
+				A03DB1991F0B5ADD004A6577 /* Info.plist */,
+			);
+			path = OCRResultTests;
+			sourceTree = "<group>";
+		};
+		A03DB1A11F0B5ADD004A6577 /* OCRResultUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A03DB1A21F0B5ADD004A6577 /* OCRResultUITests.m */,
+				A03DB1A41F0B5ADD004A6577 /* Info.plist */,
+			);
+			path = OCRResultUITests;
+			sourceTree = "<group>";
+		};
+		A03DB1D01F0B5E7C004A6577 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0EC6E761F0B83B900A4067B /* AVFoundation.framework */,
+				A0EC6E741F0B83B200A4067B /* CoreMedia.framework */,
+				A0EC6E721F0B83A500A4067B /* QuartzCore.framework */,
+				A0EC6E701F0B839C00A4067B /* CoreImage.framework */,
+				A03DB1DF1F0B5F6B004A6577 /* libstdc++.tbd */,
+				A03DB1DB1F0B5ECD004A6577 /* MediaPlayer.framework */,
+				A03DB1D31F0B5E9D004A6577 /* ImageIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0EC6E7E1F0B98AD00A4067B /* MAImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				A0EC6E7F1F0B98AD00A4067B /* MACaptureSession.h */,
+				A0EC6E801F0B98AD00A4067B /* MACaptureSession.m */,
+				A0EC6E811F0B98AD00A4067B /* MAConstants.h */,
+				A0EC6E821F0B98AD00A4067B /* MAConstants.m */,
+				A0EC6E831F0B98AD00A4067B /* MADrawRect.h */,
+				A0EC6E841F0B98AD00A4067B /* MADrawRect.m */,
+				A0EC6E851F0B98AD00A4067B /* MAImagePickerController.h */,
+				A0EC6E861F0B98AD00A4067B /* MAImagePickerController.m */,
+				A0EC6E871F0B98AD00A4067B /* MAImagePickerControllerAdjustViewController.h */,
+				A0EC6E881F0B98AD00A4067B /* MAImagePickerControllerAdjustViewController.mm */,
+				A0EC6E891F0B98AD00A4067B /* MAImagePickerFinalViewController.h */,
+				A0EC6E8A1F0B98AD00A4067B /* MAImagePickerFinalViewController.mm */,
+				A0EC6E8B1F0B98AD00A4067B /* MAOpenCV.h */,
+				A0EC6E8C1F0B98AD00A4067B /* MAOpenCV.mm */,
+				A0EC6E8D1F0B98AD00A4067B /* UIImage+fixOrientation.h */,
+				A0EC6E8E1F0B98AD00A4067B /* UIImage+fixOrientation.m */,
+				A0EC6E8F1F0B98AD00A4067B /* UIImageView+ContentFrame.h */,
+				A0EC6E901F0B98AD00A4067B /* UIImageView+ContentFrame.m */,
+			);
+			path = MAImagePickerController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A03DB1791F0B5ADD004A6577 /* OCRResult */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03DB1A71F0B5ADD004A6577 /* Build configuration list for PBXNativeTarget "OCRResult" */;
+			buildPhases = (
+				E665A63FE702EBB9DF922E3F /* [CP] Check Pods Manifest.lock */,
+				A03DB1761F0B5ADD004A6577 /* Sources */,
+				A03DB1771F0B5ADD004A6577 /* Frameworks */,
+				A03DB1781F0B5ADD004A6577 /* Resources */,
+				6CC260423542E44D39C470A5 /* [CP] Embed Pods Frameworks */,
+				642E3C256B83CC3773329B73 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCRResult;
+			productName = OCRResult;
+			productReference = A03DB17A1F0B5ADD004A6577 /* OCRResult.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A03DB1921F0B5ADD004A6577 /* OCRResultTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03DB1AA1F0B5ADD004A6577 /* Build configuration list for PBXNativeTarget "OCRResultTests" */;
+			buildPhases = (
+				A03DB18F1F0B5ADD004A6577 /* Sources */,
+				A03DB1901F0B5ADD004A6577 /* Frameworks */,
+				A03DB1911F0B5ADD004A6577 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A03DB1951F0B5ADD004A6577 /* PBXTargetDependency */,
+			);
+			name = OCRResultTests;
+			productName = OCRResultTests;
+			productReference = A03DB1931F0B5ADD004A6577 /* OCRResultTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A03DB19D1F0B5ADD004A6577 /* OCRResultUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03DB1AD1F0B5ADD004A6577 /* Build configuration list for PBXNativeTarget "OCRResultUITests" */;
+			buildPhases = (
+				A03DB19A1F0B5ADD004A6577 /* Sources */,
+				A03DB19B1F0B5ADD004A6577 /* Frameworks */,
+				A03DB19C1F0B5ADD004A6577 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A03DB1A01F0B5ADD004A6577 /* PBXTargetDependency */,
+			);
+			name = OCRResultUITests;
+			productName = OCRResultUITests;
+			productReference = A03DB19E1F0B5ADD004A6577 /* OCRResultUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A03DB1721F0B5ADD004A6577 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = xingjie;
+				TargetAttributes = {
+					A03DB1791F0B5ADD004A6577 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Z6FW88DK2F;
+						ProvisioningStyle = Automatic;
+					};
+					A03DB1921F0B5ADD004A6577 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Z6FW88DK2F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A03DB1791F0B5ADD004A6577;
+					};
+					A03DB19D1F0B5ADD004A6577 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Z6FW88DK2F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A03DB1791F0B5ADD004A6577;
+					};
+				};
+			};
+			buildConfigurationList = A03DB1751F0B5ADD004A6577 /* Build configuration list for PBXProject "OCRResult" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A03DB1711F0B5ADD004A6577;
+			productRefGroup = A03DB17B1F0B5ADD004A6577 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A03DB1791F0B5ADD004A6577 /* OCRResult */,
+				A03DB1921F0B5ADD004A6577 /* OCRResultTests */,
+				A03DB19D1F0B5ADD004A6577 /* OCRResultUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A03DB1781F0B5ADD004A6577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03DB18D1F0B5ADD004A6577 /* LaunchScreen.storyboard in Resources */,
+				A07008801F0B787F00EC2FE3 /* tessdata in Resources */,
+				A03DB18A1F0B5ADD004A6577 /* Assets.xcassets in Resources */,
+				A03DB1881F0B5ADD004A6577 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03DB1911F0B5ADD004A6577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03DB19C1F0B5ADD004A6577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		642E3C256B83CC3773329B73 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCRResult/Pods-OCRResult-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CC260423542E44D39C470A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OCRResult/Pods-OCRResult-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/OpenCV/opencv2.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/opencv2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCRResult/Pods-OCRResult-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E665A63FE702EBB9DF922E3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCRResult-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A03DB1761F0B5ADD004A6577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0EC6E931F0B98AD00A4067B /* MADrawRect.m in Sources */,
+				A0EC6E7B1F0B92C200A4067B /* UIBarButtonItem+OCRAdd.m in Sources */,
+				A0EC6E911F0B98AD00A4067B /* MACaptureSession.m in Sources */,
+				A03DB1851F0B5ADD004A6577 /* ViewController.m in Sources */,
+				A0EC6E951F0B98AD00A4067B /* MAImagePickerControllerAdjustViewController.mm in Sources */,
+				A0EC6E971F0B98AD00A4067B /* MAOpenCV.mm in Sources */,
+				A03DB1821F0B5ADD004A6577 /* AppDelegate.m in Sources */,
+				A03DB17F1F0B5ADD004A6577 /* main.m in Sources */,
+				A0EC6E921F0B98AD00A4067B /* MAConstants.m in Sources */,
+				A0EC6E941F0B98AD00A4067B /* MAImagePickerController.m in Sources */,
+				A0EC6E981F0B98AD00A4067B /* UIImage+fixOrientation.m in Sources */,
+				A0EC6E991F0B98AD00A4067B /* UIImageView+ContentFrame.m in Sources */,
+				A0EC6E961F0B98AD00A4067B /* MAImagePickerFinalViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03DB18F1F0B5ADD004A6577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03DB1981F0B5ADD004A6577 /* OCRResultTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03DB19A1F0B5ADD004A6577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03DB1A31F0B5ADD004A6577 /* OCRResultUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A03DB1951F0B5ADD004A6577 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A03DB1791F0B5ADD004A6577 /* OCRResult */;
+			targetProxy = A03DB1941F0B5ADD004A6577 /* PBXContainerItemProxy */;
+		};
+		A03DB1A01F0B5ADD004A6577 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A03DB1791F0B5ADD004A6577 /* OCRResult */;
+			targetProxy = A03DB19F1F0B5ADD004A6577 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A03DB1861F0B5ADD004A6577 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A03DB1871F0B5ADD004A6577 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A03DB18B1F0B5ADD004A6577 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A03DB18C1F0B5ADD004A6577 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A03DB1A51F0B5ADD004A6577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A03DB1A61F0B5ADD004A6577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A03DB1A81F0B5ADD004A6577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z6FW88DK2F;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(SRCROOT)",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OCRResult/OCRResult-pch.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = OCRResult/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackhag.inst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		A03DB1A91F0B5ADD004A6577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z6FW88DK2F;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(SRCROOT)",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OCRResult/OCRResult-pch.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = OCRResult/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackhag.inst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		A03DB1AB1F0B5ADD004A6577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z6FW88DK2F;
+				INFOPLIST_FILE = OCRResultTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xingjie.OCRResultTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCRResult.app/OCRResult";
+			};
+			name = Debug;
+		};
+		A03DB1AC1F0B5ADD004A6577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z6FW88DK2F;
+				INFOPLIST_FILE = OCRResultTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xingjie.OCRResultTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCRResult.app/OCRResult";
+			};
+			name = Release;
+		};
+		A03DB1AE1F0B5ADD004A6577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Z6FW88DK2F;
+				INFOPLIST_FILE = OCRResultUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xingjie.OCRResultUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OCRResult;
+			};
+			name = Debug;
+		};
+		A03DB1AF1F0B5ADD004A6577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Z6FW88DK2F;
+				INFOPLIST_FILE = OCRResultUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xingjie.OCRResultUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OCRResult;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A03DB1751F0B5ADD004A6577 /* Build configuration list for PBXProject "OCRResult" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03DB1A51F0B5ADD004A6577 /* Debug */,
+				A03DB1A61F0B5ADD004A6577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A03DB1A71F0B5ADD004A6577 /* Build configuration list for PBXNativeTarget "OCRResult" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03DB1A81F0B5ADD004A6577 /* Debug */,
+				A03DB1A91F0B5ADD004A6577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A03DB1AA1F0B5ADD004A6577 /* Build configuration list for PBXNativeTarget "OCRResultTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03DB1AB1F0B5ADD004A6577 /* Debug */,
+				A03DB1AC1F0B5ADD004A6577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A03DB1AD1F0B5ADD004A6577 /* Build configuration list for PBXNativeTarget "OCRResultUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03DB1AE1F0B5ADD004A6577 /* Debug */,
+				A03DB1AF1F0B5ADD004A6577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A03DB1721F0B5ADD004A6577 /* Project object */;
+}
