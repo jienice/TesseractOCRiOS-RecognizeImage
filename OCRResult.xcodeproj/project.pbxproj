@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24558EA65F3C827816DE327E /* Pods_OCRResult.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6320F5C0FBDBDD017A0E185B /* Pods_OCRResult.framework */; };
 		A03DB17F1F0B5ADD004A6577 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A03DB17E1F0B5ADD004A6577 /* main.m */; };
 		A03DB1821F0B5ADD004A6577 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A03DB1811F0B5ADD004A6577 /* AppDelegate.m */; };
 		A03DB1851F0B5ADD004A6577 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03DB1841F0B5ADD004A6577 /* ViewController.m */; };
@@ -53,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6320F5C0FBDBDD017A0E185B /* Pods_OCRResult.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCRResult.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A60637D59B9B56B3CD81AB7 /* Pods-OCRResult.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRResult.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCRResult/Pods-OCRResult.debug.xcconfig"; sourceTree = "<group>"; };
 		A03DB17A1F0B5ADD004A6577 /* OCRResult.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCRResult.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03DB17E1F0B5ADD004A6577 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A03DB1801F0B5ADD004A6577 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +101,7 @@
 		A0EC6E8E1F0B98AD00A4067B /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
 		A0EC6E8F1F0B98AD00A4067B /* UIImageView+ContentFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ContentFrame.h"; sourceTree = "<group>"; };
 		A0EC6E901F0B98AD00A4067B /* UIImageView+ContentFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ContentFrame.m"; sourceTree = "<group>"; };
+		C11FCD6415D2C406B2D5BD46 /* Pods-OCRResult.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRResult.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCRResult/Pods-OCRResult.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 				A0EC6E711F0B839C00A4067B /* CoreImage.framework in Frameworks */,
 				A03DB1E01F0B5F6B004A6577 /* libstdc++.tbd in Frameworks */,
 				A03DB1D41F0B5E9D004A6577 /* ImageIO.framework in Frameworks */,
+				24558EA65F3C827816DE327E /* Pods_OCRResult.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +137,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6158E6D15653DB532144D72E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A60637D59B9B56B3CD81AB7 /* Pods-OCRResult.debug.xcconfig */,
+				C11FCD6415D2C406B2D5BD46 /* Pods-OCRResult.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A03DB1711F0B5ADD004A6577 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +154,7 @@
 				A03DB1A11F0B5ADD004A6577 /* OCRResultUITests */,
 				A03DB17B1F0B5ADD004A6577 /* Products */,
 				A03DB1D01F0B5E7C004A6577 /* Frameworks */,
+				6158E6D15653DB532144D72E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,6 +225,7 @@
 				A03DB1DF1F0B5F6B004A6577 /* libstdc++.tbd */,
 				A03DB1DB1F0B5ECD004A6577 /* MediaPlayer.framework */,
 				A03DB1D31F0B5E9D004A6577 /* ImageIO.framework */,
+				6320F5C0FBDBDD017A0E185B /* Pods_OCRResult.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -598,6 +614,7 @@
 		};
 		A03DB1A81F0B5ADD004A6577 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A60637D59B9B56B3CD81AB7 /* Pods-OCRResult.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -614,7 +631,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mackhag.inst;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xingjie.github;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -622,6 +639,7 @@
 		};
 		A03DB1A91F0B5ADD004A6577 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C11FCD6415D2C406B2D5BD46 /* Pods-OCRResult.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -638,7 +656,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mackhag.inst;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xingjie.github;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};

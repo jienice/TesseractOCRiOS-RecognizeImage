@@ -38,8 +38,6 @@
     // project AND that the "tessdata" folder is a referenced folder and NOT
     // a symbolic group in your project
     
-    
-    
     G8RecognitionOperation *operation = [[G8RecognitionOperation alloc] initWithLanguage:@"chi_sim"];
     
     // Use the original Tesseract engine mode in performing the recognition
@@ -109,15 +107,12 @@
 - (IBAction)initButton:(id)sender
 {
     MAImagePickerController *imagePicker = [[MAImagePickerController alloc] init];
-    
     [imagePicker setDelegate:self];
     [imagePicker setSourceType:MAImagePickerControllerSourceTypeCamera];
-    
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:imagePicker];
-    
     [self presentViewController:navigationController animated:YES completion:nil];
 }
-
+#pragma mark - MAImagePickerControllerDelegate
 - (void)imagePickerDidCancel
 {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -129,19 +124,17 @@
     
     if ([[NSFileManager defaultManager] fileExistsAtPath:path]){
         NSLog(@"File Found at %@", path);
-        [self recognizeImageWithTesseract:[UIImage imageWithContentsOfFile:path]];
+        UIImage *needRecognizedImage = [UIImage imageWithContentsOfFile:path];
+        [self recognizeImageWithTesseract:[self tranImageForrecognize:needRecognizedImage]];
     }else{
         NSLog(@"No File Found at %@", path);
     }
     [[NSFileManager defaultManager] removeItemAtPath:path error:nil];
 }
-
-- (void)imagePickerController:(UIImagePickerController *)picker
-didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    UIImage *image = info[UIImagePickerControllerOriginalImage];
-    [picker dismissViewControllerAnimated:YES completion:nil];
-    UIImage *imageToDisplay =[UIImage imageWithCGImage:[image CGImage]
+#pragma mark - Private
+- (UIImage *)tranImageForrecognize:(UIImage *)needRecognizedImage{
+    
+    UIImage *imageToDisplay =[UIImage imageWithCGImage:[needRecognizedImage CGImage]
                                                  scale:1.0
                                            orientation: UIImageOrientationRight];
     
@@ -152,7 +145,6 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     UIImage *newImage2 = [UIImage imageWithCGImage:[newImage CGImage]
                                              scale:1.0
                                        orientation: UIImageOrientationLeft];
-    [self recognizeImageWithTesseract:newImage2];
+    return newImage2;
 }
-
 @end
